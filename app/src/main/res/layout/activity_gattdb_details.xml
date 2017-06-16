@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <RelativeLayout
+    android:id="@+id/activity_gattdb_details_relative"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+      android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/activity_gattdb_details_txtheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/gatt_services_details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_large" />
+
+
+    <ImageView
+        android:id="@+id/activity_gattdb_details_imgback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/icon_fh" />
+
+</RelativeLayout>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/activity_gattdb_details_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"
+                android:drawableRight="@drawable/col_icon"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/gatt_services"
+                android:textColor="@color/txt_black_middle"
+                 />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_servieNameTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:gravity="center|left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/txt_black_middle"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_gattdb_details_ll1"
+            android:layout_below="@+id/activity_gattdb_details_ll1"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"
+                android:drawableRight="@drawable/col_icon"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/gatt_charateristic"
+                android:textColor="@color/txt_black_middle"
+                 />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_cNameTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:gravity="center|left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/txt_black_middle"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_gattdb_details_ll2"
+            android:layout_below="@+id/activity_gattdb_details_ll2"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/list_bg_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/gatt_services_ascii"
+                android:textColor="@color/txt_black_middle" />
+
+            <EditText
+                android:id="@+id/activity_gattdb_details_txtascii"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/txt_black_middle"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_gattdb_details_ll3"
+            android:layout_below="@+id/activity_gattdb_details_ll3"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/list_bg_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/gatt_services_hex"
+                android:textColor="@color/txt_black_middle" />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txthex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/txt_black_middle"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_gattdb_details_ll4"
+            android:layout_below="@+id/activity_gattdb_details_ll4"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/list_bg_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/gatt_services_date"
+                android:textColor="@color/txt_black_middle"  />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txtdate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/txt_black_middle"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_gattdb_details_ll5"
+            android:layout_below="@+id/activity_gattdb_details_ll5"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/list_bg_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/gatt_services_time"
+                android:textColor="@color/txt_black_middle" />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txttime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/txt_black_middle"  />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_ll7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_gattdb_details_ll6"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/activity_gattdb_details_cdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/gatt_details_descriptors"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_gattdb_details_properties_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/activity_gattdb_details_ll7"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txtread"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/gatt_services_read"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txtwrite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/gatt_services_write"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txtnotify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/gatt_services_notify"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_gattdb_details_txtindicate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/gatt_services_indicate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>
+

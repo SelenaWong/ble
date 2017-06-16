@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_gattdb_descriptor_details_parent"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/activity_gattdb_descriptor_details_rl"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/activity_gattdb_descriptor_details_headTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/gatt_descriptors_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_large" />
+
+
+        <ImageView
+            android:id="@+id/activity_gattdb_descriptor_details_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@drawable/icon_fh" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_gattdb_descriptor_details_cLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_gattdb_descriptor_details_rl"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/col_icon"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/gatt_charateristic"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium"
+             />
+
+        <TextView
+            android:id="@+id/activity_gattdb_descriptor_details_cNameTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_gattdb_descriptor_details_dLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_gattdb_descriptor_details_cLl"
+        android:layout_below="@+id/activity_gattdb_descriptor_details_cLl"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/col_icon"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/gatt_descriptor"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium" />
+
+        <TextView
+            android:id="@+id/activity_gattdb_descriptor_details_dNameTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_gattdb_descriptor_details_dHVLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_gattdb_descriptor_details_dLl"
+        android:layout_below="@+id/activity_gattdb_descriptor_details_dLl"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/col_icon"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/gatt_descriptor_hex_value"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium" />
+
+        <TextView
+            android:id="@+id/activity_gattdb_descriptor_details_dHvTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_gattdb_descriptor_details_dvLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_gattdb_descriptor_details_dHVLl"
+        android:layout_below="@+id/activity_gattdb_descriptor_details_dHVLl"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/col_icon"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/gatt_descriptor_value"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium" />
+
+        <TextView
+            android:id="@+id/activity_gattdb_descriptor_details_dvTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:textColor="@color/txt_black_middle"
+            android:textSize="@dimen/txt_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_gattdb_descriptor_details_pLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/activity_gattdb_descriptor_details_readBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/gatt_services_read"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_medium"
+            />
+
+        <Button
+            android:id="@+id/activity_gattdb_descriptor_details_wNBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:layout_margin="10dp"
+            android:text="@string/gatt_services_notify"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_medium"
+            />
+        <Button
+            android:id="@+id/activity_gattdb_descriptor_details_wIBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:layout_margin="10dp"
+            android:text="@string/gatt_services_indicate"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_medium"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

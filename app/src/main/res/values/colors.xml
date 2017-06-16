@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27b7f9</color>
+    <color name="colorPrimaryDark">#0576ea</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="txt_black_dark">#333333</color>
+    <color name="txt_black_middle">#666666</color>
+    <color name="txt_black_light">#999999</color>
+    <color name="bg_seperator_line">#E2E2E2</color>
+    <color name="white">#ffffff</color>
+    <color name="thirty_transparent">#B2ffffff</color>
+    <color name="seventy_transparent">#4Cffffff</color>
+    <color name="bg_transparent_light">#F1F1F1</color>
+    <color name="corner_property_red">#FF6060</color>
+    <color name="corner_property_orange">#FFC818</color>
+    <color name="corner_property_green">#11C98A</color>
+    <color name="corner_property_blue">#27b7f9</color>
+    <color name="corner_property_grey">#808080</color>
+
+
+    <!-- Action bar pull to refresh colors -->
+    <color name="dark_blue">#0c377b</color>
+    <color name="medium_blue">#11479c</color>
+    <color name="light_blue">#2a67c8</color>
+    <color name="faint_blue">#9ec2fb</color>
+
+    <!--File Read/Write progress colors-->
+    <color name="file_read_progress">#751abb00</color>
+    <color name="grey">#EFEFF4</color>
+    <color name="green">#701ABB00</color>
+</resources>
